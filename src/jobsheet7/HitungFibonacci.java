@@ -1,4 +1,7 @@
 package jobsheet7;
+
+import java.util.Scanner;
+
 public class HitungFibonacci {
     private static void tampilJudul(String identitas)
     {
@@ -9,7 +12,15 @@ public class HitungFibonacci {
     public static void main(String[] args){
      String identitas = "Amalina Zakiyah Salsabila Aribowo / XR2 / 04";
     tampilJudul(identitas);
-    
+    int n = tampilInput();
+    }
+    private static int tampilInput(){
+        Scanner scanner = new Scanner (System.in);
+        
+        System.out.print("Bilangan ke-: ");
+        int n = scanner.nextInt();
+        return n;
+        
     }
 
 }
